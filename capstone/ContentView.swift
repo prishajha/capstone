@@ -12,13 +12,29 @@ struct ContentView: View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!...knkjnjnjinijn")
+                
+                
+            Text("")
         }
         .padding()
-    }
+        .background(Color.blue)
+        
 }
 
-#Preview {
-    ContentView()
+    struct Home {
+        var Body: some View {
+            NavigationStack{
+                VStack(spacing: 20){
+                    Text("Get Started")
+                        .font(.custom("Times New Roman", size:  45))
+                }
+            }
+           // NavigationLink( )
+        }
+    }
+
+
+
+//#Preview {
+    //ContentView()
 }
